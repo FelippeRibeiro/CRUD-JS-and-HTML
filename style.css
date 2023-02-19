@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+#table thead {
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+#insert {
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+#read {
+  justify-content: center;
+  margin: auto;
+  margin-top: 25vh;
+}
