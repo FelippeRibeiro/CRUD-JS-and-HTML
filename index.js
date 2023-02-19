@@ -29,7 +29,28 @@ let Dados = [
     Telefone: "7193131323",
   },
 ];
+
+function createThead() {
+  if (table.firstChild.id == "tableHead") {
+    table.firstChild(table.lastChild);
+  }
+  let tHead = document.createElement("thead");
+  tHead.id = "tableHead";
+  tr = document.createElement("tr");
+
+  Object.keys(Dados[0]).forEach((el) => {
+    console.log(el);
+    td = document.createElement("td");
+    td.innerHTML = `${el}`;
+    tr.appendChild(td);
+  });
+
+  tHead.appendChild(tr);
+  table.appendChild(tHead);
+}
+
 function seeDatas() {
+  createThead();
   if (table.lastChild.id == "tableBody") {
     table.removeChild(table.lastChild);
   }
