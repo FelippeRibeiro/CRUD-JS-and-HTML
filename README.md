@@ -1,0 +1,4 @@
+- [x] Create
+- [x] Read
+- [ ] Update
+- [ ] Delete
